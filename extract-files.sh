@@ -145,6 +145,7 @@ adb pull /system/bin/nv_hciattach ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/nvrm_daemon ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/nvtest ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/tegrastats ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/bin/sdcard ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Pull wifi/bt files
 adb pull /system/etc/nvram.txt ../../../vendor/$VENDOR/$DEVICE/proprietary

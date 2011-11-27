@@ -175,6 +175,7 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvrm_daemon:system/bin/nvrm_daemon \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvtest:system/bin/nvtest \\
     vendor/__VENDOR__/__DEVICE__/proprietary/tegrastats:system/bin/tegrastats \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/sdcard:system/bin/sdcard
 
 # wifi/bt files for __DEVICE__
 PRODUCT_COPY_FILES += \\
