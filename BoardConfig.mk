@@ -57,6 +57,7 @@ BOARD_PAGE_SIZE := 0x00000800
 
 BOARD_USES_GENERIC_AUDIO := false
 BOARD_PREBUILT_LIBAUDIO := true
+BOARD_USES_AUDIO_LEGACY := true
 
 BOARD_EGL_CFG := device/acer/picasso/egl.cfg
 TARGET_OTA_ASSERT_DEVICE := picasso,ventana
