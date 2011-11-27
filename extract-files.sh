@@ -96,6 +96,25 @@ adb pull /system/etc/firmware/nvmm_wmadec.axf ../../../vendor/$VENDOR/$DEVICE/pr
 adb pull /system/etc/firmware/nvmm_wmaprodec.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/etc/firmware/nvrm_avp.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
 
+# Alsa configuration
+adb pull /system/usr/share/alsa/alsa.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/share/alsa/cards/aliases.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/share/alsa/pcm/rear.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/share/alsa/pcm/surround71.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/share/alsa/pcm/surround40.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/share/alsa/pcm/iec958.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/share/alsa/pcm/side.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/share/alsa/pcm/modem.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/share/alsa/pcm/default.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/share/alsa/pcm/center_lfe.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/share/alsa/pcm/surround50.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/share/alsa/pcm/dmix.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/share/alsa/pcm/surround51.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/share/alsa/pcm/surround41.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/share/alsa/pcm/dsnoop.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/share/alsa/pcm/front.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/usr/share/alsa/pcm/dpl.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
+
 # Pull nvidia EGL libs
 adb pull /system/lib/egl/libEGL_tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/egl/libGLESv1_CM_tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary

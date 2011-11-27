@@ -118,7 +118,28 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvmm_wmaprodec.axf:system/etc/firmware/nvmm_wmaprodec.axf \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvrm_avp.bin:system/etc/firmware/nvrm_avp.bin 
 
-    
+
+# Alsa configuration
+PRODUCT_COPY_FILES += \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/alsa.conf:system/etc/firmware/bcm4329.hcd \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/alsa.conf:system/usr/share/alsa/alsa.conf \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/aliases.conf:system/usr/share/alsa/cards/aliases.conf  \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/rear.conf:system/usr/share/alsa/pcm/rear.conf  \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/surround71.conf:system/usr/share/alsa/pcm/surround71.conf  \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/surround40.conf:system/usr/share/alsa/pcm/surround40.conf  \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/iec958.conf:system/usr/share/alsa/pcm/iec958.conf  \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/side.conf:system/usr/share/alsa/pcm/side.conf  \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/modem.conf:system/usr/share/alsa/pcm/modem.conf  \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/default.conf:system/usr/share/alsa/pcm/default.conf  \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/center_lfe.conf:system/usr/share/alsa/pcm/center_lfe.conf  \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/surround50.conf:system/usr/share/alsa/pcm/surround50.conf  \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/dmix.conf:system/usr/share/alsa/pcm/dmix.conf  \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/surround51.conf:system/usr/share/alsa/pcm/surround51.conf  \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/surround41.conf:system/usr/share/alsa/pcm/surround41.conf  \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/dsnoop.conf:system/usr/share/alsa/pcm/dsnoop.conf  \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/front.conf:system/usr/share/alsa/pcm/front.conf  \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/dpl.conf:system/usr/share/alsa/pcm/dpl.conf
+  
 
 # EGL files for __DEVICE__
 PRODUCT_COPY_FILES += \\
