@@ -60,6 +60,7 @@ PRODUCT_PACKAGES := \
 
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.opengles.version=131072 \
+    ro.telephony.ril.v3=icccardstatus,datacall,signalstrength \
     hwui.render_dirty_regions=false
 
 PRODUCT_CHARACTERISTICS := tablet
