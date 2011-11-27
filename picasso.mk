@@ -44,6 +44,11 @@ PRODUCT_COPY_FILES += \
     frameworks/base/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
     frameworks/base/data/etc/tablet_core_hardware.xml:system/etc/permissions/tablet_core_hardware.xml 
 
+# Vold
+PRODUCT_COPY_FILES += \
+        $(LOCAL_PATH)/vold.fstab:system/etc/vold.fstab
+
+
 # Kernel modules
 PRODUCT_COPY_FILES += \
     device/acer/picasso/modules/scsi_wait_scan.ko:system/modules/scsi_wait_scan.ko \
