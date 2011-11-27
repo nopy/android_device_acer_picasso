@@ -73,6 +73,28 @@ adb pull /system/lib/libnvtestresults.so ../../../vendor/$VENDOR/$DEVICE/proprie
 adb pull /system/lib/libnvwinsys.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvwsi.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
+# Firmwares
+adb pull /system/etc/firmware/bcm4329.hcd ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvddk_audiofx_core.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvddk_audiofx_transport.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvmm_aacdec.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvmm_adtsdec.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvmm_audiomixer.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvmm_h264dec.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvmm_jpegdec.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvmm_jpegenc.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvmm_manager.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvmm_mp2dec.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvmm_mp3dec.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvmm_mpeg4dec.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvmm_reference.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvmm_service.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvmm_sorensondec.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvmm_vc1dec.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvmm_wavdec.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvmm_wmadec.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvmm_wmaprodec.axf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/firmware/nvrm_avp.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Pull nvidia EGL libs
 adb pull /system/lib/egl/libEGL_tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
