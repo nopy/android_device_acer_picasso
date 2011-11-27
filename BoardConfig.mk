@@ -48,6 +48,7 @@ WIFI_DRIVER_MODULE_ARG := "firmware_path=/system/vendor/firmware/fw_bcm4329.bin 
 
 
 BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BLUETOOTH_BCM := true
 #BOARD_HAVE_BLUETOOTH_CSR := true
 
 BOARD_KERNEL_CMDLINE := nvmem=128M@384M mem=1024M@0M vmalloc=256M video=tegrafb tegra_fbmem=4098560@0x18012000 console=none usbcore.old_scheme_first=1 brand=acer lp0_vec=8192@0x1840c000 tegraboot=sdmmc gpt
