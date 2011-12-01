@@ -97,6 +97,7 @@ adb pull /system/etc/firmware/nvmm_wmaprodec.axf ../../../vendor/$VENDOR/$DEVICE
 adb pull /system/etc/firmware/nvrm_avp.bin ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Alsa configuration
+adb pull /system/etc/asound.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/share/alsa/alsa.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/share/alsa/cards/aliases.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/usr/share/alsa/pcm/rear.conf  ../../../vendor/$VENDOR/$DEVICE/proprietary

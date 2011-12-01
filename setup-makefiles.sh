@@ -121,7 +121,7 @@ PRODUCT_COPY_FILES += \\
 
 # Alsa configuration
 PRODUCT_COPY_FILES += \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/alsa.conf:system/etc/firmware/bcm4329.hcd \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/asound.conf:system/etc/asound.conf \\
     vendor/__VENDOR__/__DEVICE__/proprietary/alsa.conf:system/usr/share/alsa/alsa.conf \\
     vendor/__VENDOR__/__DEVICE__/proprietary/aliases.conf:system/usr/share/alsa/cards/aliases.conf  \\
     vendor/__VENDOR__/__DEVICE__/proprietary/rear.conf:system/usr/share/alsa/pcm/rear.conf  \\
