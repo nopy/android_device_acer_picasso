@@ -120,9 +120,9 @@ service sdcard /system/bin/sdcard /data/media 1023 1023
 #    keycodes 115 114
 
 #BCM
-service hciattach /system/bin/brcm_patchram_plus --enable_hci \
-    --baudrate 3000000 --patchram /etc/firmware/bcm4329.hcd --pcm_role slave \
-    --enable_lpm /dev/ttyHS2
+service hciattach /system/bin/brcm_patchram_plus --enable_lpm --enable_hci \
+    --baudrate 3000000 \
+    --patchram /etc/firmware/bcm4329.hcd /dev/ttyHS2
     class main
     user bluetooth
     group bluetooth net_bt_admin
