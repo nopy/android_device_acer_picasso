@@ -149,9 +149,6 @@ PRODUCT_COPY_FILES += \\
 
 # HW libs for __DEVICE__
 PRODUCT_COPY_FILES += \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libmpl.so:system/lib/libmpl.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libmlplatform.so:system/lib/libmlplatform.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libmllite.so:system/lib/libmllite.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/gps.hw.so:system/lib/hw/gps.hw.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/gps.mbm.so:system/lib/hw/gps.mbm.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/gps.tegra.so:system/lib/hw/gps.tegra.so \\
