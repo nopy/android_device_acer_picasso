@@ -146,6 +146,11 @@ adb pull /system/bin/nvrm_daemon ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/nvtest ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/tegrastats ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/sdcard ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/bin/glgps_nvidiaTegra2android ../../../vendor/$VENDOR/$DEVICE/proprietary
+
+# Gps conf files
+adb pull /system/etc/gps.conf ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/etc/gps/gpsconfig.xml ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Pull wifi/bt files
 adb pull /system/etc/nvram.txt ../../../vendor/$VENDOR/$DEVICE/proprietary

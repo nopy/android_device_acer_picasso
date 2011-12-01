@@ -175,7 +175,13 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvrm_daemon:system/bin/nvrm_daemon \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvtest:system/bin/nvtest \\
     vendor/__VENDOR__/__DEVICE__/proprietary/tegrastats:system/bin/tegrastats \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/sdcard:system/bin/sdcard
+    vendor/__VENDOR__/__DEVICE__/proprietary/sdcard:system/bin/sdcard \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/glgps_nvidiaTegra2android:system/bin/glgps_nvidiaTegra2android
+
+# Gps conf files
+PRODUCT_COPY_FILES += \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/gps.conf:system/etc/gps.conf \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/gpsconfig.xml:system/etc/gps/gpsconfig.xml
 
 # wifi/bt files for __DEVICE__
 PRODUCT_COPY_FILES += \\
