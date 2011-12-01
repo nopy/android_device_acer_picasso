@@ -64,6 +64,12 @@ PRODUCT_PROPERTY_OVERRIDES := \
     ro.telephony.ril.v3=icccardstatus,datacall,signalstrength \
     hwui.render_dirty_regions=false
 
+
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.secure=0
+
+ADDITIONAL_DEFAULT_PROPERTIES += ro.secure=0
+
 PRODUCT_CHARACTERISTICS := tablet
 
 DEVICE_PACKAGE_OVERLAYS := \
