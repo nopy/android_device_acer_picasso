@@ -122,6 +122,7 @@ adb pull /system/lib/egl/libGLESv1_CM_tegra.so ../../../vendor/$VENDOR/$DEVICE/p
 adb pull /system/lib/egl/libGLESv2_tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Pull HW libs
+adb pull /system/lib/libmpl.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/gps.hw.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/gps.mbm.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/gps.tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
