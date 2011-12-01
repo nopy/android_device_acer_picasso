@@ -60,6 +60,7 @@ PRODUCT_PACKAGES := \
 
 PRODUCT_PROPERTY_OVERRIDES := \
     ro.opengles.version=131072 \
+    wifi.interface=wlan0 \
     ro.telephony.ril.v3=icccardstatus,datacall,signalstrength \
     hwui.render_dirty_regions=false
 
