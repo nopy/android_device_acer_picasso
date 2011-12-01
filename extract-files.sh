@@ -145,7 +145,6 @@ adb pull /system/bin/nv_hciattach ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/nvrm_daemon ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/nvtest ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/tegrastats ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/bin/sdcard ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/glgps_nvidiaTegra2android ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Gps conf files
