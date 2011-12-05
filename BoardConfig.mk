@@ -45,7 +45,8 @@ WIFI_DRIVER_FW_PATH_STA := "/system/vendor/firmware/fw_bcm4329.bin"
 WIFI_DRIVER_FW_PATH_AP := "/system/vendor/firmware/fw_bcm4329_apsta.bin"
 WIFI_DRIVER_MODULE_NAME := "bcm4329"
 WIFI_DRIVER_MODULE_ARG := "firmware_path=/system/vendor/firmware/fw_bcm4329.bin nvram_path=/system/etc/nvram.txt iface_name=wlan"
-
+BOARD_WLAN_DEVICE_REV := bcm4329
+WIFI_BAND := 802_11_ABG
 
 BOARD_HAVE_BLUETOOTH := true
 BOARD_HAVE_BLUETOOTH_BCM := true
@@ -81,3 +82,4 @@ BOARD_CACHE_DEVICE := /dev/block/mmcblk0p4
 BOARD_CACHE_FILESYSTEM := ext4
 
 BOARD_VOLD_MAX_PARTITIONS := 8
+
