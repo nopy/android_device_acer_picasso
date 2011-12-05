@@ -28,29 +28,34 @@ adb pull /system/lib/libcamera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libcgdrv.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Pull needed NV libs
-adb pull /system/lib/libnvddk_2d_v2.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/libnvddk_audiofx.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvddk_2d.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libnvddk_2d_v2.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvddk_aes_user.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libnvddk_audiofx.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libnvddk_vmr.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 adb pull /system/lib/libnvdispatch_helper.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvdispmgr_d.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 adb pull /system/lib/libnvec.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
+adb pull /system/lib/libnvmm_asfparser.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_audio.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libnvmm_aviparser.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_camera.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_contentpipe.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_image.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_manager.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_misc.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libnvmm_msaudio.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_parser.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_service.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_tracklist.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_utils.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/libnvmm_video.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libnvmm_vc1_video.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_videorenderer.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libnvmm_video.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_vp6_video.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/libnvmm_writer.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
@@ -123,14 +128,13 @@ adb pull /system/lib/egl/libGLESv2_tegra.so ../../../vendor/$VENDOR/$DEVICE/prop
 
 # Pull HW libs
 adb pull /system/lib/libmpl.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/hw/gps.hw.so ../../../vendor/$VENDOR/$DEVICE/proprietary
-adb pull /system/lib/hw/gps.mbm.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/gps.tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/gralloc.tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/hwcomposer.tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/overlay.tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/sensors.tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/tegra_alsa.tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/hw/lights.picasso.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Pull keychar files
 
@@ -145,6 +149,8 @@ adb pull /system/bin/nvrm_daemon ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/nvtest ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/tegrastats ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/bin/glgps_nvidiaTegra2android ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/bin/dock_detect_daemon ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/bin/dock_utility ../../../vendor/$VENDOR/$DEVICE/proprietary
 
 # Gps conf files
 adb pull /system/etc/gps.conf ../../../vendor/$VENDOR/$DEVICE/proprietary

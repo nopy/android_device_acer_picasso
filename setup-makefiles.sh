@@ -45,6 +45,7 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvos.so:obj/lib/libnvos.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvdispmgr_d.so:obj/lib/libnvdispmgr_d.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvdispatch_helper.so:obj/lib/libnvdispatch_helper.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/libcamera.so:obj/lib/libcamera.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvomxilclient.so:obj/lib/libnvomxilclient.so
 
 # Standard blobs necessary for __DEVICE__
@@ -57,25 +58,30 @@ PRODUCT_COPY_FILES += \\
 
 # __VENDOR__ blobs for __DEVICE__
 PRODUCT_COPY_FILES += \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libnvddk_2d_v2.so:system/lib/libnvddk_2d_v2.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm.so:system/lib/libnvmm.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/libnvddk_audiofx.so:system/lib/libnvddk_audiofx.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvddk_2d.so:system/lib/libnvddk_2d.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/libnvddk_2d_v2.so:system/lib/libnvddk_2d_v2.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvddk_aes_user.so:system/lib/libnvddk_aes_user.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/libnvddk_audiofx.so:system/lib/libnvddk_audiofx.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/libnvddk_vmr.so:system/lib/libnvddk_vmr.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvdispatch_helper.so:system/lib/libnvdispatch_helper.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvdispmgr_d.so:system/lib/libnvdispmgr_d.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvec.so:system/lib/libnvec.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_asfparser.so:system/lib/libnvmm_asfparser.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_audio.so:system/lib/libnvmm_audio.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_aviparser.so:system/lib/libnvmm_aviparser.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_camera.so:system/lib/libnvmm_camera.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_contentpipe.so:system/lib/libnvmm_contentpipe.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_image.so:system/lib/libnvmm_image.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_manager.so:system/lib/libnvmm_manager.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_misc.so:system/lib/libnvmm_misc.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_msaudio.so:system/lib/libnvmm_msaudio.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_parser.so:system/lib/libnvmm_parser.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_service.so:system/lib/libnvmm_service.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm.so:system/lib/libnvmm.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_tracklist.so:system/lib/libnvmm_tracklist.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_utils.so:system/lib/libnvmm_utils.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_video.so:system/lib/libnvmm_video.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_vc1_video.so:system/lib/libnvmm_vc1_video.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_videorenderer.so:system/lib/libnvmm_videorenderer.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_vp6_video.so:system/lib/libnvmm_vp6_video.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libnvmm_writer.so:system/lib/libnvmm_writer.so \\
@@ -150,14 +156,13 @@ PRODUCT_COPY_FILES += \\
 # HW libs for __DEVICE__
 PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/libmpl.so:system/lib/libmpl.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/gps.hw.so:system/lib/hw/gps.hw.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/gps.mbm.so:system/lib/hw/gps.mbm.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/gps.tegra.so:system/lib/hw/gps.tegra.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/gralloc.tegra.so:system/lib/hw/gralloc.tegra.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/hwcomposer.tegra.so:system/lib/hw/hwcomposer.tegra.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/overlay.tegra.so:system/lib/hw/overlay.tegra.so \\
     vendor/__VENDOR__/__DEVICE__/proprietary/sensors.tegra.so:system/lib/hw/sensors.tegra.so \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/tegra_alsa.tegra.so:system/lib/hw/tegra_alsa.tegra.so
+    vendor/__VENDOR__/__DEVICE__/proprietary/tegra_alsa.tegra.so:system/lib/hw/tegra_alsa.tegra.so \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/lights.picasso.so:system/lib/hw/lights.picasso.so 
 
 # Keychar files for __DEVICE__
 
@@ -173,7 +178,10 @@ PRODUCT_COPY_FILES += \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvrm_daemon:system/bin/nvrm_daemon \\
     vendor/__VENDOR__/__DEVICE__/proprietary/nvtest:system/bin/nvtest \\
     vendor/__VENDOR__/__DEVICE__/proprietary/tegrastats:system/bin/tegrastats \\
-    vendor/__VENDOR__/__DEVICE__/proprietary/glgps_nvidiaTegra2android:system/bin/glgps_nvidiaTegra2android
+    vendor/__VENDOR__/__DEVICE__/proprietary/glgps_nvidiaTegra2android:system/bin/glgps_nvidiaTegra2android \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/dock_detect_daemon:system/bin/dock_detect_daemon \\
+    vendor/__VENDOR__/__DEVICE__/proprietary/dock_utility:system/bin/dock_utility 
+
 
 # Gps conf files
 PRODUCT_COPY_FILES += \\
