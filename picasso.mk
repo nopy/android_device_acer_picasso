@@ -81,9 +81,6 @@ PRODUCT_PACKAGES += \
     librs_jni \
     audio.primary.tegra \
     liba2dp \
-    libmllite \
-    libmlplatform \
-    libinvensense_hal \
     com.android.future.usb.accessory
 
 # Filesystem management tools

@@ -128,6 +128,8 @@ adb pull /system/lib/egl/libGLESv2_tegra.so ../../../vendor/$VENDOR/$DEVICE/prop
 
 # Pull HW libs
 adb pull /system/lib/libmpl.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libmlplatform.so ../../../vendor/$VENDOR/$DEVICE/proprietary
+adb pull /system/lib/libmllite.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/gps.tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/gralloc.tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
 adb pull /system/lib/hw/hwcomposer.tegra.so ../../../vendor/$VENDOR/$DEVICE/proprietary
